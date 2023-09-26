@@ -1,0 +1,21 @@
+<%- include('partials/header')  -%>
+
+<h1>HOME</h1>
+
+<p> <%= paraOneHome %> </p>
+
+<% /* %>
+   <% for (let index = 0; index < posts.length; index++) { %>
+   <% console.log(logval[index]["title"]); %>
+<% } %>
+<% */ %>
+
+<% posts.forEach(function (content) { %>
+     <h2><%= content.title %></h2>  
+     <p><%= content.para.substring(0,100)+ '...' %>
+        <a href="/posts/<%=content.title%>">more</a>
+    </p> 
+      
+<% }); %>
+
+<%- include('partials/footer')  -%>

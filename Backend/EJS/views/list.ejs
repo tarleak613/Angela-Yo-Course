@@ -1,0 +1,39 @@
+<%- include("header")  -%>
+
+
+  <% /* %>
+   <!-- <h1>It is a <%= dayName %></h1>
+     <% if(dayName === 'Tuesday'){ %>
+        <h2 style="color: blue">It is indeed tuesday</h2>
+    <%   }   %> 
+    <ul>
+         <li>Buy food</li>
+        <li>Cook food</li>
+        <li>Eat food</li> 
+         <li> <%= newItems %></li> 
+
+       <% for(var i=0; i< newItems.length; i++){   %>
+            <li> <%= newItems[i] %></li>
+    <%   }  %>
+    </ul> -->
+    <% */ %>
+     
+    <div class="box" id="heading">
+        <h1><%= listType %></h1>
+    </div>   
+    
+    <div class="box">
+            <% for(var i=0; i< newItems.length; i++){   %>
+                <div class="item">
+                    <input type="checkbox">
+                    <p> <%= newItems[i] %></p>
+                </div>
+        <%   }  %>
+        <form action="/" method="post">
+            <!-- <label for="new_items" >Enter the list</label> -->
+            <input type="text" placeholder="Enter any new item" name="new_items" autocomplete="off">
+            <button type="submit" name="list" value=<%= listType %>>+</button>
+        </form>
+    </div>
+
+<%- include("footer")  -%>

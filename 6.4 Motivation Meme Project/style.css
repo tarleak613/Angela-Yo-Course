@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+  }
+  div{
+    padding-top: 20px;
+    width: 50%;
+    margin-left: 25%;
+    /* border: 20px solid wheat; */
+  }
+  p,h1{
+    color: white;
+    text-align: center;
+  }
+  h1{
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+  }
+  img{
+    border: 5px solid white;
+    width: 100%;
+  }
